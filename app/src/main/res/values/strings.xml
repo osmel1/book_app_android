@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">api_consumer</string>
     <string name="button_search">Rechercher</string>
+    <string name="button_share">Partager</string>
 </resources>

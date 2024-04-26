@@ -2,6 +2,7 @@ package com.example.api_consumer;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.example.api_consumer.activities.BookDetailActivity;
 import com.example.api_consumer.adapters.BookAdapter;
 import com.example.api_consumer.models.Book;
 import com.example.api_consumer.models.GoogleBooksResponse;
@@ -71,6 +73,10 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         });
-
+        listViewBooks.setOnItemClickListener((adapterView, view, i, l) -> {
+            Intent intent = new Intent(getApplicationContext(), BookDetailActivity.class);
+            intent.putExtra("book", books.get(i));
+            startActivity(intent);
+        });
 }
 }
