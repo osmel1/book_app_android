@@ -2,6 +2,9 @@
 # Application Android consommant l'API Google Books
 
 Au cours de ce TP, j'ai créé une application mobile Android en utilisant Android Studio et Java. Cette application consomme l'API de Google Books.
+## Contributors
+* **Supervise par Pr. Abdelmajid Bousselham**
+* **Oussama ElHachimi** - [osmel1](https://github.com/osmel1)
 
 ## 1. Ajout des dépendances nécessaires 
 
